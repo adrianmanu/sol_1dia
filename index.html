@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta para Sogely</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   
+
+<div class="valentines-day">
+  <div class="envelope"></div>
+  <div class="heart"></div>
+  <div class="text"> PARA: <br> SOGELY ALDAZ </div>
+  <div class="front"></div>
+</div>
+
+<canvas id="bg-anim" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;"></canvas>
+
+<!-- Portada de carta cerrada -->
+<div id="closed-card" style="display:none;">
+  <div class="closed-card-inner">
+    <div class="closed-card-imgs">
+      <img src="./juntos.jpg" alt="Portada Juntos" class="closed-card-img" />
+      <img src="./juntos2.png" alt="Portada Juntos 2" class="closed-card-img" />
+    </div>
+    <div class="closed-card-text">Feliz primer día mi vida</div>
+    <button id="open-letter-btn">Siguiente &rarr;</button>
+  </div>
+</div>
+
+<div id="card" class="open-letter">
+  <div class="side left">
+    <img src="./chimy.jpg" class="img-left img-left-1" alt="Imagen 1" />
+    <img src="./snoopy1.jpg" class="img-left img-left-2" alt="Imagen 2" />
+  </div>
+  <div class="side right">
+    <div class="page-front">
+      <h2>Para mi amorcito</h2>
+      <p>Querida Sogely...</p>
+      <p>Han sido casi 2 años de una amistad hermosa que se ha convertido en algo mucho más especial. Ahora que hemos iniciado nuestra relación, quiero que sepas que te quiero muchísimo y que me haces inmensamente feliz.</p>
+      <div class="page-front-actions">
+        <button id="back-to-cover">&larr; Volver</button>
+        <button id="close-page">Ver más &rarr;</button>
+      </div>
+    </div>
+    <div class="page-back">
+      <div class="page-back-content">
+        <p>He sido muy feliz todo este tiempo a tu lado, y ahora que estamos juntos, sé que será mucho mejor. Quiero cuidarte y protegerte, ser tu apoyo incondicional, en quien confíes plenamente y quien estará siempre a tu lado.</p>
+        <p>Espero que podamos llegar muy lejos juntos, fortalecer día a día nuestra relación y durar mucho tiempo. Contigo todo es más hermoso.</p>
+        <p>Te quiero con todo mi corazón.</p>
+      </div>
+      <button id="open-page">&larr; Volver</button>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
